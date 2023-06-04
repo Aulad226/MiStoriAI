@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
 from django.http import HttpResponse
-import openai 
+#import openai 
 import datetime
 from django.views.generic import ListView
 from mistoriapp.models import form
@@ -28,7 +28,7 @@ def form(request):
     return render(request,'form.html', {})
 
 def form_submit(request):
-    openai.api_key = API_KEY
+    #openai.api_key = API_KEY
     name = topic = audience = keyword = ''
     if request.method == 'POST':
         name = request.POST.get('name', '')
