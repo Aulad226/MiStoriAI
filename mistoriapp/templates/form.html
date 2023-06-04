@@ -1,0 +1,47 @@
+ {% extends 'base.html' %}
+ {% load static %}
+ {% block page_title %}Form{% endblock %}
+ {% block main_body %}
+ <body>
+	<body>
+		{% csrf_token %}
+		<div class="form-container" method="POST">
+		  <h1>Interview Form</h1>
+		  <form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			
+			<label for="birth-year">Birth Year:</label>
+			<input type="text" id="birth-year" name="birth-year" required>
+			<br>
+			<label for="birth-country">Birth Country:</label>
+			<input type="text" id="birth-country" name="birth-country" required>
+			
+			<label for="education">Education:</label>
+			<input type="text" id="education" name="education" required>
+			<br>
+			<label for="relationship">Your Relationship:</label>
+			<select id="relationship" name="relationship" required>
+			  <option value="">Please select</option>
+			  <option value="Son">Son</option>
+			  <option value="Daughter">Daughter</option>
+			  <option value="Grandson">Grandson</option>
+			  <option value="Granddaughter">Granddaughter</option>
+			  <option value="Friend">Friend</option>
+			  <option value="Work Colleague">Work Colleague</option>
+			</select>
+			<br>
+			<label for="work-history">Summary Work History:</label>
+			<input type="text" id="work-history" name="work-history" required>
+			<br>
+			<label for="achievements">Achievements:</label>
+			<input type="text" id="achievements" name="achievements" required>
+			<label for="family">Family:</label>
+			<input type="text" id="family" name="family" required>
+			<br>			
+			<button href="#" type="submit">Generate Message</button>
+		  </form>
+		</div>
+		</body>
+ {% endblock %}
+</html>

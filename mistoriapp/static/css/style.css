@@ -1,0 +1,148 @@
+body {
+	background-color: rgb(240, 239, 237);
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	text-align: center;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	width: 50%;
+	margin: auto;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.story:hover {
+	box-shadow: 0 8px 16px 0 rgba(78, 75, 75, 0.2);
+}
+
+.story {
+	padding: 20px;
+}
+
+header {
+	background-color: #0d8a81;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 80px;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 100%;
+	padding: 0 20px;
+}
+
+.logo a {
+	color: #fff;
+	font-size: 2rem;
+	text-decoration: none;
+}
+
+.nav-links ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav-links li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 0 20px;
+}
+
+.search input {
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 5px;
+}
+
+.search button {
+	padding: 7px;
+	background-color: #4CAF50;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+
+main {
+	margin-top: 100px;
+	padding: 20px;
+}
+
+.story {
+	margin-bottom: 30px;
+}
+
+h2 {
+	font-size: 2rem;
+	margin-bottom: 20px;
+}
+
+p {
+	text-align: start;
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+
+footer {
+	background-color: #0d8a81;
+	color: #ffffff;
+	text-align: center;
+	padding: 20px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+/*style the form */
+.form-container {
+	display: flex;
+	flex-direction: column;
+	align-items: auto;
+	margin-top: 60px;
+}
+
+/* Style the form fields */
+label {
+	margin-top: 10px;
+	font-weight: bold;
+	width: fit-content;
+}
+
+input[type="text"],
+select {
+	width: 100px;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+}
+
+/* Style the submit button */
+button[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+button[type="submit"]:hover {
+	background-color: #a409ec;
+}

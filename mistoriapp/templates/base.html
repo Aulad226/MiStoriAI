@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% load static %}
+  <meta charset="utf-8">
+  <link href="{% static 'images/Logo.png' %}" rel="icon">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <title>
+   {% block page_title %}MiStori{% endblock %}
+ </title>
+ </head>
+  <body>
+   {% block content %}
+   
+   <header>
+	<nav>
+		<div class="logo">
+			<a href="{% url 'home' %}">MiStori</a>
+		</div>
+		<div class="nav-links">
+			<ul>
+				<li><a href="{% url 'home' %}">Home</a></li>
+				<li><a href="{% url 'form' %}">Stories</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">Storage</a></li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</div>
+		<div class="search">
+			<input input ="find" placeholder="Search your option here...">
+			<button type="submit">Search</button>
+		</div>
+	</nav>
+  </header>
+   {% endblock %}
+   {% block main_body %}
+   {% endblock %}
+  </body>
+  <footer>
+	<div class="social-icons">
+		<a href="#"><i class="fa fa-facebook"></i></a>
+		<a href="#"><i class="fa fa-twitter"></i></a>
+		<a href="#"><i class="fa fa-instagram"></i></a>
+		<a href="#"><i class="fa fa-youtube"></i></a>
+	  </div>
+	<p>&copy; 2023 True Blue IT Services. All rights reserved.</p>
+  </footer>
+</html>
